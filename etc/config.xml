@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <consent_integration>
+            <general>
+                <api_endpoint>https://api-uat.central.tech/member/</api_endpoint>
+                <api_key>LeuSnP5vEu5J3RikpuDEH7qWG9cgje017IPei5Of</api_key>
+                <channel>MDC</channel>
+                <partner>TOPSVITA</partner>
+                <brand>HQ</brand>
+                <x_trials>10</x_trials>
+            </general>
+        </consent_integration>
+    </default>
+</config>

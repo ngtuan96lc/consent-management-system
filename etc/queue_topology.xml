@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework-message-queue:etc/topology.xsd">
+    <exchange name="createConsentRecordExchange" type="topic" connection="amqp">
+        <binding id="processCreateConsentRecordBinding"
+                 topic="consent.createConsentRecord"
+                 destinationType="queue"
+                 destination="consent.createConsentRecord" />
+        <arguments>
+            <argument name="x-queue-type" xsi:type="string">quorum</argument>
+            <argument name="x-delivery-limit" xsi:type="string">3</argument>
+        </arguments>
+    </exchange>
+</config>

@@ -1,0 +1,22 @@
+<!-- ko if: allowDisplayConsent() -->
+<li id="checkout-privacy-policy">
+    <div class="checkout-privacy-policy-content">
+        <table>
+            <tr>
+                <td>
+                    <label for="checkbox-privacy-policy">
+                        <input type="checkbox" name="checkbox-privacy-policy" id="checkbox-privacy-policy" style="width: 20px; height: 20px;"/>
+                        <input type="hidden"
+                               name="checkbox-consent-privacy-version"
+                               value=""
+                               data-bind="value: getConsentPrivacyVersion()" />
+                    </label>
+                </td>
+                <td>
+                    <div class="marketing-display-text" data-bind="html: getMarketingDisplayText()" style="display: inline-block;"></div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</li>
+<!-- /ko -->
