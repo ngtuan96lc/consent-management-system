@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="consent_integration" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="0">
+            <class>separator-top-top</class>
+            <label>Consent Integration</label>
+            <tab>softloft</tab>
+            <resource>SoftLoft_ConsentManagementSystem::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="0">
+                <label>General</label>
+                <field id="api_endpoint" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0"  canRestore="0">
+                    <label>Api Endpoint</label>
+                </field>
+                <field id="api_key" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Api Token Key</label>
+                </field>
+                <field id="channel" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Channel</label>
+                </field>
+                <field id="partner" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Partner</label>
+                </field>
+                <field id="brand" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Brand</label>
+                </field>
+                <field id="x_trials" translate="label" type="text" sortOrder="70" showInDefault="1" showInWebsite="1" showInStore="0">
+                    <label>Number of times retry</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

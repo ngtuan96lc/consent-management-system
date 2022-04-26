@@ -1,0 +1,28 @@
+{
+    "consent_queue": {
+        "column": {
+            "message_id": true,
+            "topic_name": true,
+            "status": true,
+            "body": true,
+            "retried_at": true,
+            "tries": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "consent_queue_log": {
+        "column": {
+            "message_log_id": true,
+            "message_id": true,
+            "logged_at": true,
+            "error_body": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "CONSENT_QUEUE_LOG_MESSAGE_ID_CONSENT_QUEUE_MESSAGE_ID": true,
+            "CONSENT_QUEUE_LOG_MESSAGE_LOG_ID_MESSAGE_ID": true
+        }
+    }
+}
